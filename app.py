@@ -11,8 +11,8 @@ load_dotenv()
 app = Flask(__name__)
 
 OUTPUT_DIR = "output"
-CSV_FILE = os.path.join(OUTPUT_DIR, "saved_reels.csv")
-XLSX_FILE = os.path.join(OUTPUT_DIR, "saved_reels.xlsx")
+CSV_FILE = os.path.join(OUTPUT_DIR, "scrapped_reels.csv")
+XLSX_FILE = os.path.join(OUTPUT_DIR, "scrapped_reels.xlsx")
 
 API_KEY = os.getenv('API_KEY', 'your-secret-api-key')
 
@@ -92,10 +92,17 @@ def refresh():
 @require_api_key
 def download(fmt):
     try:
+        downloads_path = os.path.join(os.path.expanduser("~"), "Downloads")
         if fmt == "csv" and os.path.exists(CSV_FILE):
-            return send_file(CSV_FILE, as_attachment=True, download_name="saved_reels.csv")
+            download_path = os.path.join(downloads_path, "scrapped_reels.csv")
+            df = pd.read_csv(CSV_FILE)
+            df.to_csv(download_path, index=False)
+            return jsonify({"message": f"File saved to {download_path}"})
         elif fmt == "excel" and os.path.exists(XLSX_FILE):
-            return send_file(XLSX_FILE, as_attachment=True, download_name="saved_reels.xlsx")
+            download_path = os.path.join(downloads_path, "scrapped_reels.xlsx")
+            df = pd.read_excel(XLSX_FILE)
+            df.to_excel(download_path, index=False, engine="openpyxl")
+            return jsonify({"message": f"File saved to {download_path}"})
         return jsonify({"error": "No file available for download"}), 404
     except Exception as e:
         return jsonify({"error": str(e)}), 500

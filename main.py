@@ -5,7 +5,7 @@ from playwright.sync_api import sync_playwright
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
 
 OUTPUT_DIR = "output"
-CSV_FILE, XLSX_FILE = os.path.join(OUTPUT_DIR, "saved_reels.csv"), os.path.join(OUTPUT_DIR, "saved_reels.xlsx")
+CSV_FILE, XLSX_FILE = os.path.join(OUTPUT_DIR, "scrapped_reels.csv"), os.path.join(OUTPUT_DIR, "scrapped_reels.xlsx")
 
 def sleep(a=2.5, b=4.5): time.sleep(random.uniform(a, b))
 def ensure_output(): os.makedirs(OUTPUT_DIR, exist_ok=True)
