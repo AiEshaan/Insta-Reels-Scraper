@@ -1,3 +1,4 @@
+# Core Instagram Scraper Dependencies
 flask==2.3.3
 pandas==2.2.3
 python-dotenv==1.0.1
@@ -6,3 +7,31 @@ openpyxl==3.1.5
 requests==2.31.0
 beautifulsoup4==4.12.2
 apscheduler==3.10.4
+
+# AI Agent Dependencies
+openai==1.12.0
+langchain==0.1.10
+langchain-openai==0.0.8
+langchain-community==0.0.25
+chromadb==0.4.22
+sentence-transformers==2.3.1
+tiktoken==0.8.0
+pydantic==2.9.2
+sqlalchemy==2.0.36
+scikit-learn==1.8.0
+textblob==0.17.1
+nltk==3.8.1
+numpy==2.2.6
+aiohttp==3.13.3
+colorama==0.4.6
+tqdm==4.66.1
+httpx==0.25.2
+jsonschema==4.20.0
+python-dateutil==2.8.2
+cachetools==5.3.2
+rich==13.7.0
+aiosqlite==0.19.0
+transformers==4.50.0
+torch==2.10.0
+marshmallow==3.20.1
+pytz==2023.3
