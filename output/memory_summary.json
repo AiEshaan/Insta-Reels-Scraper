@@ -1,0 +1,11 @@
+{
+  "memory_stats": {
+    "total_memories": 0,
+    "total_preferences": 0,
+    "total_patterns": 0,
+    "short_term_memory_size": 0
+  },
+  "top_preferences": [],
+  "successful_patterns": [],
+  "export_timestamp": "2025-09-19T01:20:12.650731"
+}

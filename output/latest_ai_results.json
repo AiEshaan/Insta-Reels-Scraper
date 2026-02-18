@@ -1,0 +1,92 @@
+{
+  "success": true,
+  "timestamp": "2025-09-19T01:20:12.639490",
+  "agent_version": "1.0.0",
+  "phases_completed": [
+    "scraper",
+    "analysis",
+    "learning",
+    "generation"
+  ],
+  "summary": {
+    "total_content_scraped": 50,
+    "total_content_analyzed": 0,
+    "patterns_learned": 0,
+    "actions_taken": 0,
+    "content_generated": 0
+  },
+  "detailed_results": {
+    "scraper": {
+      "success": true,
+      "data": "                                  Reel URL  ...                       Thumbnail\n0  https://www.instagram.com/reel/sample1/  ...  https://example.com/thumb1.jpg\n1  https://www.instagram.com/reel/sample2/  ...  https://example.com/thumb2.jpg\n2  https://www.instagram.com/reel/sample3/  ...  https://example.com/thumb3.jpg\n3  https://www.instagram.com/reel/sample4/  ...  https://example.com/thumb4.jpg\n4  https://www.instagram.com/reel/sample5/  ...  https://example.com/thumb5.jpg\n\n[5 rows x 3 columns]"
+    },
+    "analysis": {
+      "success": true,
+      "data": {
+        "analyzed_items": [],
+        "summary_stats": {},
+        "insights": [],
+        "recommendations": []
+      },
+      "processed_count": 0
+    },
+    "learning": {
+      "success": true,
+      "data": {
+        "patterns_learned": 0,
+        "preferences_updated": 0,
+        "insights_generated": 0
+      },
+      "user_preferences": {}
+    },
+    "actions": {
+      "success": false,
+      "error": "'AutonomousActionEngine' object has no attribute 'run_action_pipeline'"
+    },
+    "generation": {
+      "success": true,
+      "data": {
+        "generated_captions": [],
+        "generated_hashtags": [],
+        "content_suggestions": [],
+        "trend_insights": [
+          {
+            "title": "The Top Instagram Reels Trends to Try This Week - Later",
+            "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Flater.com%2Fblog%2Finstagram%2Dreels%2Dtrends%2F&rut=4bd460ae5b1b22023420e0fa3e3d17380dbe497e4a1b306662b7d9b1d3f8f86d",
+            "snippet": "Looking forInstagramReelsinspo? Discover your go-to resource for trendingInstagramReelsaudio & songs to elevate your IG strategy. Updated weekly!",
+            "source": "duckduckgo",
+            "relevance_score": 0.9,
+            "timestamp": "2025-09-19 01:20:12.638421"
+          },
+          {
+            "title": "The Top Instagram Reels Trends Right Now (Updated September 2025)",
+            "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fslayingsocial.com%2Finstagram%2Dreels%2Dtrends%2F&rut=a696e6b02018cb0a4d77e6472116469a786b31f2a8d8a4ad632d32cee29bc239",
+            "snippet": "Besides thisInstagramReelstrendspage, one of the best resources for finding currentInstagramReelstrendsis specificInstagramaccounts. Here are someInstagramaccounts where you can find \"TrendAlerts\": @creators: The officialInstagramaccount for IG Creators, which does atrendroundup everyweek.",
+            "source": "duckduckgo",
+            "relevance_score": 0.8,
+            "timestamp": "2025-09-19 01:20:12.638587"
+          },
+          {
+            "title": "10 Instagram Reels Trends that Will Make You Go Viral in 2024!",
+            "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsocinova.com%2Finstagram%2Dreels%2Dtrends%2F&rut=69195e920f9dc0fe0a9dcac7e2d18d708b169c0a3c75889ba052b840c1663871",
+            "snippet": "Top 10InstagramReelTrendsfor2024that will boost your visibility and engagement. Learn how to go viral with these must-try strategies!",
+            "source": "duckduckgo",
+            "relevance_score": 0.7,
+            "timestamp": "2025-09-19 01:20:12.638732"
+          }
+        ]
+      },
+      "generated_items": 0
+    }
+  },
+  "insights": [],
+  "recommendations": [
+    "Review generated captions and hashtags for improved engagement",
+    "Focus on content categories with highest viral potential",
+    "Continue using the agent to improve personalization",
+    "Review memory summary for user preference insights",
+    "Set up API keys for enhanced web search and content generation",
+    "Configure social media APIs for real-time trend analysis",
+    "Schedule regular agent runs for continuous learning"
+  ]
+}
